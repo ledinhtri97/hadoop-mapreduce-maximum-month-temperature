@@ -1,11 +1,8 @@
 # hadoop-mapreduce-maximum-month-temperature
+download hadoop-core-1.2.1.jar, which is used to compile and execute the MapReduce program.
+Make sure you had started the hadoop by `start-all.sh`, to check it work well, type command `sudo jps`
+and when done your job let `stop-all.sh`.
 
-# download hadoop-core-1.2.1.jar, which is used to compile and execute the
-# MapReduce program.
-# Make sure you had started the hadoop by `start-all.sh`, to check
-# it work well, type command `sudo jps`
-# and when done your job
-# let `stop-all.sh`.
 # Step to compile program.
 
 -step 1: the following command is to create a directory to store the compiled
@@ -33,7 +30,7 @@ application by taking the input files from the input directory.
 
 the program run succsessfully like this
 ======================================
-
+```
 18/03/08 15:17:46 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 18/03/08 15:17:46 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
 18/03/08 15:17:47 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
@@ -107,7 +104,7 @@ the program run succsessfully like this
 	File Output Format Counters 
 		Bytes Written=24
 ============================================
-
+```
 -step 6: check file output and show file output part-00000
 
 ```$ hadoop fs -ls /output-dir/```
