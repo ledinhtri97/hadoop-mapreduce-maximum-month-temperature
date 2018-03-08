@@ -13,6 +13,7 @@ java classes
 -step 2: compiling the MaxMomTem.java and creating a jar for the program
 
 ```$ javac -classpath hadoop-core-1.2.1.jar -d lab MaxMomTem.java```
+
 ```$ jar -cvf lab.jar -C lab/ .```
 
 -step 3: The following command is used to create an input directory in HDFS.
@@ -23,6 +24,7 @@ java classes
 in the input directory of HDFS. now you at the directory project
 
 ```$ hadoop fs -put data_tem.txt /input-dir```
+
 ```$ hadoop fs -ls /input-dir #to check it out```
 
 -step 5: The following command is used to run the maximum_monthly_temperature
@@ -108,6 +110,7 @@ the program run succsessfully like this
 -step 6: check file output and show file output part-00000
 
 ```$ hadoop fs -ls /output-dir/```
+
 ```$ hadoop fs -cat /output_dir/part-00000```
 
 -step 7: to move file output part-00000 from HDFS to local
