@@ -29,7 +29,8 @@ in the input directory of HDFS. now you at the directory project
 
 step 5: The following command is used to run the maximum_monthly_temperature
 application by taking the input files from the input directory.
-```hadoop jar lab.jar trimo.hadoop.MaxMonTem /input-dir /output-dir```
+
+```$ hadoop jar lab.jar trimo.hadoop.MaxMonTem /input-dir /output-dir```
 
 the program run succsessfully like this
 ======================================
